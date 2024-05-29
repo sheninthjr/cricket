@@ -90,6 +90,7 @@ app.post("/player", (req, res) => __awaiter(void 0, void 0, void 0, function* ()
 }));
 app.post("/purchase", (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     const { buyerEmail, playerId } = req.body;
+    console.log(buyerEmail);
     try {
         const buyer = yield prisma.user.findUnique({
             where: { email: buyerEmail },

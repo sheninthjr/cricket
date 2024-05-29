@@ -100,7 +100,7 @@ app.post("/player", async (req, res) => {
 
 app.post("/purchase", async (req, res) => {
   const { buyerEmail, playerId } = req.body;
-
+  console.log(buyerEmail);
   try {
     const buyer = await prisma.user.findUnique({
       where: { email: buyerEmail },

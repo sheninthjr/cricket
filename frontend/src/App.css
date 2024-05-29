@@ -4,13 +4,15 @@
 
 .player-card {
   max-width: 300px;
-  margin: 20px;
+  margin: 50px;
 }
 
 .player-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+
+  justify-content: space-evenly;
+  border-width: 1px solid black;
 }
 
 input,

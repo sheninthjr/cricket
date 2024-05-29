@@ -1,13 +1,17 @@
-FROM node:20
+FROM node:latest
 
-WORKDIR /app
+WORKDIR /usr/src/app
 
-COPY package.json tsconfig.json ./
+COPY package*.json ./
+
+COPY tsconfig.json ./
 
 RUN npm install
 
 COPY . .
 
-EXPOSE 3000
+RUN npm run build
 
-CMD [ "npm","run","dev" ]
+CMD ["npm", "start"]
+
+EXPOSE 3000
