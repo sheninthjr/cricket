@@ -1,0 +1,29 @@
+.App {
+  text-align: center;
+}
+
+.player-card {
+  max-width: 300px;
+  margin: 20px;
+}
+
+.player-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+input,
+button {
+  display: block;
+  margin: 10px auto;
+}
+
+button {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
